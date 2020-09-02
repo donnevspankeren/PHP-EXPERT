@@ -22,7 +22,7 @@
 
         img {
             width: 100px;
-            /* height: 100px; */
+            height: 100px;
         }
     </style>
 </head>
@@ -51,6 +51,11 @@
                 'beschrijving' => 'Nullam cursus cursus lorem vel ultrices. In congue, dui sed volutpat posuere, lorem nisi varius eros, vel dapibus quam est vitae mi. Ut et nulla a est laoreet efficitur. Cras accumsan urna libero, in interdum sapien molestie et. Aliquam in magna augue. Vivamus venenatis bibendum nisi id bibendum. Nulla et mi mi.',
                 'image' => 'images/frenkie01.jpg'
 
+            ],
+            [
+                'titel' => '',
+                'beschrijving' => '',
+                'image' => ''
             ]
         ],
         'Economie' => [
@@ -58,6 +63,10 @@
                 'titel' => 'De beurzen klimmen weer na Red Thursday',
                 'beschrijving' => 'Donec eu facilisis ex. Proin a maximus diam. Vivamus efficitur ac turpis quis facilisis. Vivamus non laoreet velit, vitae consectetur dolor. Quisque enim sapien, sollicitudin vitae nisi quis, ultrices pretium felis. Aliquam malesuada maximus hendrerit. Suspendisse auctor commodo lacinia. Maecenas metus nisi, porta non sollicitudin id, condimentum vitae nisl.',
                 'image' => 'images/rodebeurzen.jpg'
+            ],[
+                'titel' => '',
+                'beschrijving' => '',
+                'image' => ''
             ]
 
         ],
@@ -74,21 +83,52 @@
             ]
         ],
 
-    ];
+    ];   
     ?>
     <!-- Pas de code hieronder aan  -->
     <!-- Loop door de array $nieuwsberichten en toon de gegevens in de juist HTML-tags  -->
+<?php
+ foreach ($nieuwsberichten as $kop => $nieuwsbericht) {
+     
+?>
 
-
-    <h1></h1>
+    <h1>
+        <?php
+            echo $kop;
+        ?>
+    </h1>
     <div class="content">
 
-        <h2 class="title"></h2>
-        <p class="title"></p>
-        <img src="" class="title">
+        <h2 class="title">
+            <?php
+                echo $nieuwsbericht[0]['titel'] . "<br>";
+            ?>
+        </h2>
+        <p class="title">
+            <?php
+                echo $nieuwsbericht[0]['beschrijving'] . "<br>";
+            ?>
+        </p>
+        <img src="<?php echo $nieuwsbericht[0]['image']. "<br>";?>"
+            class="title">
 
-    </div>
+        <h2 class="title">
+            <?php
+                echo $nieuwsbericht[1]['titel'] . "<br>";
+            ?>
+        </h2>
+        <p class="title">
+            <?php
+                echo $nieuwsbericht[1]['beschrijving'] . "<br>";
+            ?>
+        </p>
+        <img src="<?php echo $nieuwsbericht[1]['image']. "<br>";?>"
+        class="title">
 
+        </div>
+<?php
+ }
+?>
 
 </body>
 
