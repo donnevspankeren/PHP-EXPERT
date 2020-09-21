@@ -1,11 +1,11 @@
 <?php
 
-class auto(){
-    $merk;
-    $kleur;
-    $type;
-    $uitvoering;
-    $brandstof;
+class auto{
+    public $merk;
+    public $kleur;
+    public $type;
+    public $uitvoering;
+    public $brandstof;
 }
 
 $nieuweAuto = new auto();
