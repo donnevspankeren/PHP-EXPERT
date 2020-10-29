@@ -23,7 +23,7 @@ De uitleg
 Je schrijft een query nu als volgt:
 
 ```php
-$sql = 'SELECT * FROM users WHERE email = :email AND status= :status;
+$sql = 'SELECT * FROM users WHERE email = :email AND status= :status';
 ```
 
 Je ziet hierboven twee placeholders staan: `:email` en `:status`
