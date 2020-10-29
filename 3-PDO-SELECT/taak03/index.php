@@ -7,12 +7,12 @@ $database_wachtwoord  = '';
 
 $database_connectie = new PDO("mysql:host=$database_lokatie;dbname=$database_naam", $database_gebruiker, $database_wachtwoord);
 
-$sql = 'SELECT * FROM users WHERE firstname = :firstname';
+$sql = 'SELECT * FROM users WHERE firstname = :ph_firstname';
 $statement = $database_connectie->prepare($sql);
-$statement->bindParam(":firstname", $firstname);
+$statement->bindParam(":ph_firstname", $firstname);
 $user = $statement->fetch();
  
 foreach ($user as $value) {
-    echo $value['firstname'] . "<br>";
+    echo $value['ph_firstname'] . "<br>";
 }
 ?>
