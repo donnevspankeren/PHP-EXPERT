@@ -23,7 +23,7 @@ Soms heb je te maken met heel veel data. Soms heb je te maken met hele grote dat
 5. [x] Maak op de bovengenoemde tabel een link of een knop waarmee naar de pagina gaat om een individuele superhero kunt bekijken in detail
 6. [x] Maak een pagina `superheroes_show.php` waarme je de gegevens van een individuele superhero kunt __bekijken__
 7. [x] Maak een pagina `superheros_edit.php` waarmee je de gegevens van een individuele superhero kunt __updaten/wijzigen__.
-8. [ ] Maak een pagina `superheroes_delete.php` waarmee je een individuele superhero kunt __verwijderen__.
+8. [x] Maak een pagina `superheroes_delete.php` waarmee je een individuele superhero kunt __verwijderen__.
 
 ## Eindresultaat
 

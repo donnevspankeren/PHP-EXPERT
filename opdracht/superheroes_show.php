@@ -12,13 +12,12 @@ $database_gegevens = $statement->fetch(PDO::FETCH_ASSOC);
 ?>
 <a href="superheroes_index.php">TERUG!</a>
 <table class="table">
-<tbody>
     <?php foreach($database_gegevens as $key => $hero):?>
         <tr>
-            <td><?php echo $key . ": " . $hero ?></td>
+            <th><?php echo $key . ":" ?></th> 
+            <td><?php echo $hero; ?></td>
         </tr>
     <?php endforeach;?>
-</tbody>
 </table>
 
 
